@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>FourToolkit.Charts</id>
+        <title>FourToolkit.Charts</title>
+        <version>1.0.1</version>
+        <authors>cherepets</authors>
+	<owners>cherepets</owners>
+        <projectUrl>https://github.com/cherepets/FourToolkit.Charts</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Simple and beautiful doughnut charts</description>
+	<iconUrl>http://i.imgur.com/U4BRggU.png</iconUrl>
+        <copyright></copyright>
+        <tags>pie, win10, windows 10, chart, charts, doughnut, report, xaml, controls</tags>
+        <dependencies>
+            <group>
+                <dependency id="Win2D.uwp" version="1.17.0" />
+            </group>
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="FourToolkit.Charts\bin\Release\FourToolkit.Charts.dll" target="lib\uap10.0"/>
+    </files>
+</package>
