@@ -2,6 +2,9 @@
 
 Simple and beautiful doughnut charts 
 
+Screenshot:
+![FourToolkit.Charts](http://i.imgur.com/x2k4WCw.png "FourToolkit.Charts")
+
 Example of usage:
 [Demo](https://github.com/cherepets/FourToolkit.Charts/tree/master/Demo "Demo")
 
