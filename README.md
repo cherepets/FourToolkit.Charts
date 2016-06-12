@@ -1,6 +1,6 @@
 # FourToolkit.Charts
 
-Simple and beautiful doughnut charts 
+Simple and beautiful doughnut charts and linear diagrams
 
 Screenshot:
 ![FourToolkit.Charts](http://i.imgur.com/x2k4WCw.png "FourToolkit.Charts")
