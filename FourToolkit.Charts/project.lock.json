@@ -1526,23 +1526,12 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Win2D.uwp/1.17.0": {
+      "Win2D.uwp/1.18.0": {
         "compile": {
           "lib/uap10.0/Microsoft.Graphics.Canvas.winmd": {}
         },
         "runtime": {
           "lib/uap10.0/Microsoft.Graphics.Canvas.winmd": {}
-        }
-      },
-      "FourToolkit.Charts/1.0.0": {
-        "dependencies": {
-          "Win2D.uwp": "[1.17.0, )"
-        },
-        "compile": {
-          "lib/uap10.0/FourToolkit.Charts.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/FourToolkit.Charts.dll": {}
         }
       }
     },
@@ -3167,7 +3156,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Win2D.uwp/1.17.0": {
+      "Win2D.uwp/1.18.0": {
         "compile": {
           "lib/uap10.0/Microsoft.Graphics.Canvas.winmd": {}
         },
@@ -3176,17 +3165,6 @@
         },
         "native": {
           "runtimes/win10-arm/native/Microsoft.Graphics.Canvas.dll": {}
-        }
-      },
-      "FourToolkit.Charts/1.0.0": {
-        "dependencies": {
-          "Win2D.uwp": "[1.17.0, )"
-        },
-        "compile": {
-          "lib/uap10.0/FourToolkit.Charts.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/FourToolkit.Charts.dll": {}
         }
       }
     },
@@ -4779,7 +4757,7 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Win2D.uwp/1.17.0": {
+      "Win2D.uwp/1.18.0": {
         "compile": {
           "lib/uap10.0/Microsoft.Graphics.Canvas.winmd": {}
         },
@@ -4788,17 +4766,6 @@
         },
         "native": {
           "runtimes/win10-arm/native/Microsoft.Graphics.Canvas.dll": {}
-        }
-      },
-      "FourToolkit.Charts/1.0.0": {
-        "dependencies": {
-          "Win2D.uwp": "[1.17.0, )"
-        },
-        "compile": {
-          "lib/uap10.0/FourToolkit.Charts.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/FourToolkit.Charts.dll": {}
         }
       }
     },
@@ -6431,7 +6398,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Win2D.uwp/1.17.0": {
+      "Win2D.uwp/1.18.0": {
         "compile": {
           "lib/uap10.0/Microsoft.Graphics.Canvas.winmd": {}
         },
@@ -6440,17 +6407,6 @@
         },
         "native": {
           "runtimes/win10-x64/native/Microsoft.Graphics.Canvas.dll": {}
-        }
-      },
-      "FourToolkit.Charts/1.0.0": {
-        "dependencies": {
-          "Win2D.uwp": "[1.17.0, )"
-        },
-        "compile": {
-          "lib/uap10.0/FourToolkit.Charts.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/FourToolkit.Charts.dll": {}
         }
       }
     },
@@ -8043,7 +7999,7 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Win2D.uwp/1.17.0": {
+      "Win2D.uwp/1.18.0": {
         "compile": {
           "lib/uap10.0/Microsoft.Graphics.Canvas.winmd": {}
         },
@@ -8052,17 +8008,6 @@
         },
         "native": {
           "runtimes/win10-x64/native/Microsoft.Graphics.Canvas.dll": {}
-        }
-      },
-      "FourToolkit.Charts/1.0.0": {
-        "dependencies": {
-          "Win2D.uwp": "[1.17.0, )"
-        },
-        "compile": {
-          "lib/uap10.0/FourToolkit.Charts.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/FourToolkit.Charts.dll": {}
         }
       }
     },
@@ -9695,7 +9640,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Win2D.uwp/1.17.0": {
+      "Win2D.uwp/1.18.0": {
         "compile": {
           "lib/uap10.0/Microsoft.Graphics.Canvas.winmd": {}
         },
@@ -9704,17 +9649,6 @@
         },
         "native": {
           "runtimes/win10-x86/native/Microsoft.Graphics.Canvas.dll": {}
-        }
-      },
-      "FourToolkit.Charts/1.0.0": {
-        "dependencies": {
-          "Win2D.uwp": "[1.17.0, )"
-        },
-        "compile": {
-          "lib/uap10.0/FourToolkit.Charts.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/FourToolkit.Charts.dll": {}
         }
       }
     },
@@ -11307,7 +11241,7 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Win2D.uwp/1.17.0": {
+      "Win2D.uwp/1.18.0": {
         "compile": {
           "lib/uap10.0/Microsoft.Graphics.Canvas.winmd": {}
         },
@@ -11316,17 +11250,6 @@
         },
         "native": {
           "runtimes/win10-x86/native/Microsoft.Graphics.Canvas.dll": {}
-        }
-      },
-      "FourToolkit.Charts/1.0.0": {
-        "dependencies": {
-          "Win2D.uwp": "[1.17.0, )"
-        },
-        "compile": {
-          "lib/uap10.0/FourToolkit.Charts.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/FourToolkit.Charts.dll": {}
         }
       }
     }
@@ -14816,8 +14739,8 @@
         "System.Xml.XmlSerializer.nuspec"
       ]
     },
-    "Win2D.uwp/1.17.0": {
-      "sha512": "G5rG8c4dBX4Aq1RKzjvmtjM3Q/us7GdzllyqF1rsiy65eQg3UE5Kc8R09ROSnHeptqf5l6W6GDZ7uJMKdHKP0Q==",
+    "Win2D.uwp/1.18.0": {
+      "sha512": "qPRgHJF9l7vKLyM/adOjUHE9OE90nYFCpa3/IOaBu1lMyiMwcfXyV2JEri+beNir0eo7luzz8dRBpyBIkjK9qw==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
@@ -14827,30 +14750,19 @@
         "include/Microsoft.Graphics.Canvas.native.h",
         "lib/uap10.0/Microsoft.Graphics.Canvas.winmd",
         "lib/uap10.0/Microsoft.Graphics.Canvas.xml",
-        "package/services/metadata/core-properties/c14cb1a5d50147c8baab5c4b7a072c76.psmdcp",
+        "package/services/metadata/core-properties/a22156b2bb2b405796333a3e432ddd3d.psmdcp",
         "runtimes/win10-arm/native/Microsoft.Graphics.Canvas.dll",
         "runtimes/win10-x64/native/Microsoft.Graphics.Canvas.dll",
         "runtimes/win10-x86/native/Microsoft.Graphics.Canvas.dll",
         "Win2d.githash.txt",
         "Win2D.uwp.nuspec"
       ]
-    },
-    "FourToolkit.Charts/1.0.0": {
-      "sha512": "Wlx7rTUu0kZ+DS/dCbK4kNk+kKJnqABfG0Dj4vZ4diT7mmTHcuk28mLl7Y+pouiP74QxVoyPDisqT8SYpt59fw==",
-      "type": "Package",
-      "files": [
-        "[Content_Types].xml",
-        "_rels/.rels",
-        "FourToolkit.Charts.nuspec",
-        "lib/uap10.0/FourToolkit.Charts.dll",
-        "package/services/metadata/core-properties/91169f2b2c3f456eba39eef97c7528dc.psmdcp"
-      ]
     }
   },
   "projectFileDependencyGroups": {
     "": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
-      "Win2D.uwp >= 1.17.0"
+      "Win2D.uwp >= 1.18.0"
     ],
     "UAP,Version=v10.0": []
   }

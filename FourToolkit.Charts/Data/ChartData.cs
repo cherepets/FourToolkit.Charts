@@ -41,8 +41,8 @@ namespace FourToolkit.Charts.Data
                 data.Add(new ChartDataItem(
                     values[i] / totalValue,
                     colorProp?.Invoke(sourceList[i]) ?? default(Color),
-                    nameProp?.Invoke(sourceList[i]),
-                    valueProp.Invoke(sourceList[i]),
+                    nameProp?.Invoke(sourceList[i]) ?? i.ToString(),
+                    values[i],
                     unitProp?.Invoke(sourceList[i])
                     ));
             return data;

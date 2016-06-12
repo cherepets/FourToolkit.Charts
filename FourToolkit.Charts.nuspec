@@ -3,7 +3,7 @@
     <metadata>
         <id>FourToolkit.Charts</id>
         <title>FourToolkit.Charts</title>
-        <version>1.0.1</version>
+        <version>1.1.0</version>
         <authors>cherepets</authors>
 	<owners>cherepets</owners>
         <projectUrl>https://github.com/cherepets/FourToolkit.Charts</projectUrl>
@@ -14,7 +14,7 @@
         <tags>pie, win10, windows 10, chart, charts, doughnut, report, xaml, controls</tags>
         <dependencies>
             <group>
-                <dependency id="Win2D.uwp" version="1.17.0" />
+                <dependency id="Win2D.uwp" version="1.18.0" />
             </group>
         </dependencies>
     </metadata>

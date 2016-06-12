@@ -110,7 +110,10 @@
     <Compile Include="Data\ChartData.cs" />
     <Compile Include="Data\ChartDataItem.cs" />
     <Compile Include="DefaultColors.cs" />
+    <Compile Include="Extensions\IListExt.cs" />
+    <Compile Include="LineChartItem.cs" />
     <Compile Include="DoughnutChartItem.cs" />
+    <Compile Include="LineChart.cs" />
     <Compile Include="Shapes\Arc.cs" />
     <Compile Include="DoughnutChart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -3,48 +3,6 @@
   "version": 1,
   "targets": {
     "UAP,Version=v10.0": {
-      "FourToolkit.Charts/1.0.0": {
-        "dependencies": {
-          "Win2D.uwp": "[1.17.0, )"
-        },
-        "compile": {
-          "lib/uap10.0/FourToolkit.Charts.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/FourToolkit.Charts.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights/1.0.0": {
-        "compile": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
-        },
-        "runtime": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights.PersistenceChannel/1.0.0": {
-        "dependencies": {
-          "Microsoft.ApplicationInsights": "[1.0.0, )"
-        },
-        "compile": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
-        },
-        "runtime": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights.WindowsApps/1.0.0": {
-        "dependencies": {
-          "Microsoft.ApplicationInsights": "[1.0.0, )",
-          "Microsoft.ApplicationInsights.PersistenceChannel": "[1.0.0, )"
-        },
-        "compile": {
-          "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
-        }
-      },
       "Microsoft.CSharp/4.0.0": {
         "dependencies": {
           "System.Collections": "[4.0.10, )",
@@ -1578,7 +1536,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Win2D.uwp/1.17.0": {
+      "Win2D.uwp/1.18.0": {
         "compile": {
           "lib/uap10.0/Microsoft.Graphics.Canvas.winmd": {}
         },
@@ -1588,48 +1546,6 @@
       }
     },
     "UAP,Version=v10.0/win10-arm": {
-      "FourToolkit.Charts/1.0.0": {
-        "dependencies": {
-          "Win2D.uwp": "[1.17.0, )"
-        },
-        "compile": {
-          "lib/uap10.0/FourToolkit.Charts.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/FourToolkit.Charts.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights/1.0.0": {
-        "compile": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
-        },
-        "runtime": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights.PersistenceChannel/1.0.0": {
-        "dependencies": {
-          "Microsoft.ApplicationInsights": "[1.0.0, )"
-        },
-        "compile": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
-        },
-        "runtime": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights.WindowsApps/1.0.0": {
-        "dependencies": {
-          "Microsoft.ApplicationInsights": "[1.0.0, )",
-          "Microsoft.ApplicationInsights.PersistenceChannel": "[1.0.0, )"
-        },
-        "compile": {
-          "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
-        }
-      },
       "Microsoft.CSharp/4.0.0": {
         "dependencies": {
           "System.Collections": "[4.0.10, )",
@@ -3253,7 +3169,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Win2D.uwp/1.17.0": {
+      "Win2D.uwp/1.18.0": {
         "compile": {
           "lib/uap10.0/Microsoft.Graphics.Canvas.winmd": {}
         },
@@ -3266,48 +3182,6 @@
       }
     },
     "UAP,Version=v10.0/win10-arm-aot": {
-      "FourToolkit.Charts/1.0.0": {
-        "dependencies": {
-          "Win2D.uwp": "[1.17.0, )"
-        },
-        "compile": {
-          "lib/uap10.0/FourToolkit.Charts.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/FourToolkit.Charts.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights/1.0.0": {
-        "compile": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
-        },
-        "runtime": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights.PersistenceChannel/1.0.0": {
-        "dependencies": {
-          "Microsoft.ApplicationInsights": "[1.0.0, )"
-        },
-        "compile": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
-        },
-        "runtime": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights.WindowsApps/1.0.0": {
-        "dependencies": {
-          "Microsoft.ApplicationInsights": "[1.0.0, )",
-          "Microsoft.ApplicationInsights.PersistenceChannel": "[1.0.0, )"
-        },
-        "compile": {
-          "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
-        }
-      },
       "Microsoft.CSharp/4.0.0": {
         "dependencies": {
           "System.Collections": "[4.0.10, )",
@@ -4903,7 +4777,7 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Win2D.uwp/1.17.0": {
+      "Win2D.uwp/1.18.0": {
         "compile": {
           "lib/uap10.0/Microsoft.Graphics.Canvas.winmd": {}
         },
@@ -4916,48 +4790,6 @@
       }
     },
     "UAP,Version=v10.0/win10-x64": {
-      "FourToolkit.Charts/1.0.0": {
-        "dependencies": {
-          "Win2D.uwp": "[1.17.0, )"
-        },
-        "compile": {
-          "lib/uap10.0/FourToolkit.Charts.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/FourToolkit.Charts.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights/1.0.0": {
-        "compile": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
-        },
-        "runtime": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights.PersistenceChannel/1.0.0": {
-        "dependencies": {
-          "Microsoft.ApplicationInsights": "[1.0.0, )"
-        },
-        "compile": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
-        },
-        "runtime": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights.WindowsApps/1.0.0": {
-        "dependencies": {
-          "Microsoft.ApplicationInsights": "[1.0.0, )",
-          "Microsoft.ApplicationInsights.PersistenceChannel": "[1.0.0, )"
-        },
-        "compile": {
-          "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
-        }
-      },
       "Microsoft.CSharp/4.0.0": {
         "dependencies": {
           "System.Collections": "[4.0.10, )",
@@ -6586,7 +6418,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Win2D.uwp/1.17.0": {
+      "Win2D.uwp/1.18.0": {
         "compile": {
           "lib/uap10.0/Microsoft.Graphics.Canvas.winmd": {}
         },
@@ -6599,48 +6431,6 @@
       }
     },
     "UAP,Version=v10.0/win10-x64-aot": {
-      "FourToolkit.Charts/1.0.0": {
-        "dependencies": {
-          "Win2D.uwp": "[1.17.0, )"
-        },
-        "compile": {
-          "lib/uap10.0/FourToolkit.Charts.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/FourToolkit.Charts.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights/1.0.0": {
-        "compile": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
-        },
-        "runtime": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights.PersistenceChannel/1.0.0": {
-        "dependencies": {
-          "Microsoft.ApplicationInsights": "[1.0.0, )"
-        },
-        "compile": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
-        },
-        "runtime": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights.WindowsApps/1.0.0": {
-        "dependencies": {
-          "Microsoft.ApplicationInsights": "[1.0.0, )",
-          "Microsoft.ApplicationInsights.PersistenceChannel": "[1.0.0, )"
-        },
-        "compile": {
-          "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
-        }
-      },
       "Microsoft.CSharp/4.0.0": {
         "dependencies": {
           "System.Collections": "[4.0.10, )",
@@ -8236,7 +8026,7 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Win2D.uwp/1.17.0": {
+      "Win2D.uwp/1.18.0": {
         "compile": {
           "lib/uap10.0/Microsoft.Graphics.Canvas.winmd": {}
         },
@@ -8249,48 +8039,6 @@
       }
     },
     "UAP,Version=v10.0/win10-x86": {
-      "FourToolkit.Charts/1.0.0": {
-        "dependencies": {
-          "Win2D.uwp": "[1.17.0, )"
-        },
-        "compile": {
-          "lib/uap10.0/FourToolkit.Charts.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/FourToolkit.Charts.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights/1.0.0": {
-        "compile": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
-        },
-        "runtime": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights.PersistenceChannel/1.0.0": {
-        "dependencies": {
-          "Microsoft.ApplicationInsights": "[1.0.0, )"
-        },
-        "compile": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
-        },
-        "runtime": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights.WindowsApps/1.0.0": {
-        "dependencies": {
-          "Microsoft.ApplicationInsights": "[1.0.0, )",
-          "Microsoft.ApplicationInsights.PersistenceChannel": "[1.0.0, )"
-        },
-        "compile": {
-          "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
-        }
-      },
       "Microsoft.CSharp/4.0.0": {
         "dependencies": {
           "System.Collections": "[4.0.10, )",
@@ -9919,7 +9667,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Win2D.uwp/1.17.0": {
+      "Win2D.uwp/1.18.0": {
         "compile": {
           "lib/uap10.0/Microsoft.Graphics.Canvas.winmd": {}
         },
@@ -9932,48 +9680,6 @@
       }
     },
     "UAP,Version=v10.0/win10-x86-aot": {
-      "FourToolkit.Charts/1.0.0": {
-        "dependencies": {
-          "Win2D.uwp": "[1.17.0, )"
-        },
-        "compile": {
-          "lib/uap10.0/FourToolkit.Charts.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/FourToolkit.Charts.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights/1.0.0": {
-        "compile": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
-        },
-        "runtime": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights.PersistenceChannel/1.0.0": {
-        "dependencies": {
-          "Microsoft.ApplicationInsights": "[1.0.0, )"
-        },
-        "compile": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
-        },
-        "runtime": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights.WindowsApps/1.0.0": {
-        "dependencies": {
-          "Microsoft.ApplicationInsights": "[1.0.0, )",
-          "Microsoft.ApplicationInsights.PersistenceChannel": "[1.0.0, )"
-        },
-        "compile": {
-          "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
-        }
-      },
       "Microsoft.CSharp/4.0.0": {
         "dependencies": {
           "System.Collections": "[4.0.10, )",
@@ -11569,7 +11275,7 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Win2D.uwp/1.17.0": {
+      "Win2D.uwp/1.18.0": {
         "compile": {
           "lib/uap10.0/Microsoft.Graphics.Canvas.winmd": {}
         },
@@ -11583,67 +11289,6 @@
     }
   },
   "libraries": {
-    "FourToolkit.Charts/1.0.0": {
-      "sha512": "Wlx7rTUu0kZ+DS/dCbK4kNk+kKJnqABfG0Dj4vZ4diT7mmTHcuk28mLl7Y+pouiP74QxVoyPDisqT8SYpt59fw==",
-      "type": "Package",
-      "files": [
-        "[Content_Types].xml",
-        "_rels/.rels",
-        "FourToolkit.Charts.nuspec",
-        "lib/uap10.0/FourToolkit.Charts.dll",
-        "package/services/metadata/core-properties/91169f2b2c3f456eba39eef97c7528dc.psmdcp"
-      ]
-    },
-    "Microsoft.ApplicationInsights/1.0.0": {
-      "sha512": "HZ47/thX57SOuIivSvIbsR6L9CCb/Yt3IyB2i4KHmmNlf3DO+lqFwWIKDdbDNWKX+qh0Rg20/JSMPK0dwUsYYw==",
-      "type": "Package",
-      "files": [
-        "[Content_Types].xml",
-        "_rels/.rels",
-        "lib/net40/Microsoft.ApplicationInsights.dll",
-        "lib/net40/Microsoft.ApplicationInsights.XML",
-        "lib/net45/Microsoft.ApplicationInsights.dll",
-        "lib/net45/Microsoft.ApplicationInsights.XML",
-        "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll",
-        "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.XML",
-        "lib/wp8/Microsoft.ApplicationInsights.dll",
-        "lib/wp8/Microsoft.ApplicationInsights.XML",
-        "Microsoft.ApplicationInsights.nuspec",
-        "package/services/metadata/core-properties/b9e7bc7ab2454491af07046165ff01d0.psmdcp"
-      ]
-    },
-    "Microsoft.ApplicationInsights.PersistenceChannel/1.0.0": {
-      "sha512": "0qQXC+CtbyF2RPuld5pF74fxsnP6ml0LUnzQ6GL9AXXY64LPsLDsPUAymoUffo7LZvPDppZboTYX59TfVxKA7A==",
-      "type": "Package",
-      "files": [
-        "[Content_Types].xml",
-        "_rels/.rels",
-        "lib/net40/Microsoft.ApplicationInsights.PersistenceChannel.dll",
-        "lib/net40/Microsoft.ApplicationInsights.PersistenceChannel.XML",
-        "lib/portable-win8+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.XML",
-        "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll",
-        "lib/wp8/Microsoft.ApplicationInsights.PersistenceChannel.dll",
-        "lib/wp8/Microsoft.ApplicationInsights.PersistenceChannel.XML",
-        "Microsoft.ApplicationInsights.PersistenceChannel.nuspec",
-        "package/services/metadata/core-properties/dc9ebba80e7343fdbd0a39a3cdeb672c.psmdcp"
-      ]
-    },
-    "Microsoft.ApplicationInsights.WindowsApps/1.0.0": {
-      "sha512": "fNCAjIwvbTV+G0dT14bgM5tptsqeSaKQaCrlq7QknOq1Xdm8ZmgsDYddMgXkvykyKLjWyU6fKuOpj6fsQJy+wQ==",
-      "type": "Package",
-      "files": [
-        "[Content_Types].xml",
-        "_rels/.rels",
-        "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll",
-        "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.XML",
-        "lib/wp8/Microsoft.ApplicationInsights.Extensibility.Windows.dll",
-        "lib/wp8/Microsoft.ApplicationInsights.Extensibility.Windows.XML",
-        "lib/wpa81/Microsoft.ApplicationInsights.Extensibility.Windows.dll",
-        "lib/wpa81/Microsoft.ApplicationInsights.Extensibility.Windows.XML",
-        "Microsoft.ApplicationInsights.WindowsApps.nuspec",
-        "package/services/metadata/core-properties/4f6f732debe548beaa1183418e8d65cc.psmdcp"
-      ]
-    },
     "Microsoft.CSharp/4.0.0": {
       "sha512": "oWqeKUxHXdK6dL2CFjgMcaBISbkk+AqEg+yvJHE4DElNzS4QaTsCflgkkqZwVlWby1Dg9zo9n+iCAMFefFdJ/A==",
       "type": "Package",
@@ -14992,8 +14637,8 @@
         "System.Xml.XmlSerializer.nuspec"
       ]
     },
-    "Win2D.uwp/1.17.0": {
-      "sha512": "G5rG8c4dBX4Aq1RKzjvmtjM3Q/us7GdzllyqF1rsiy65eQg3UE5Kc8R09ROSnHeptqf5l6W6GDZ7uJMKdHKP0Q==",
+    "Win2D.uwp/1.18.0": {
+      "sha512": "qPRgHJF9l7vKLyM/adOjUHE9OE90nYFCpa3/IOaBu1lMyiMwcfXyV2JEri+beNir0eo7luzz8dRBpyBIkjK9qw==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
@@ -15003,7 +14648,7 @@
         "include/Microsoft.Graphics.Canvas.native.h",
         "lib/uap10.0/Microsoft.Graphics.Canvas.winmd",
         "lib/uap10.0/Microsoft.Graphics.Canvas.xml",
-        "package/services/metadata/core-properties/c14cb1a5d50147c8baab5c4b7a072c76.psmdcp",
+        "package/services/metadata/core-properties/a22156b2bb2b405796333a3e432ddd3d.psmdcp",
         "runtimes/win10-arm/native/Microsoft.Graphics.Canvas.dll",
         "runtimes/win10-x64/native/Microsoft.Graphics.Canvas.dll",
         "runtimes/win10-x86/native/Microsoft.Graphics.Canvas.dll",
@@ -15014,9 +14659,6 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "Microsoft.ApplicationInsights >= 1.0.0",
-      "Microsoft.ApplicationInsights.PersistenceChannel >= 1.0.0",
-      "Microsoft.ApplicationInsights.WindowsApps >= 1.0.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.0.0"
     ],
     "UAP,Version=v10.0": []

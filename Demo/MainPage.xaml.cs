@@ -3,11 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Windows.UI;
-using Windows.UI.Xaml.Controls;
 
 namespace Demo
 {
-    public sealed partial class MainPage : Page
+    public sealed partial class MainPage
     {
         public MainPage()
         {
@@ -34,7 +33,8 @@ namespace Demo
                 }
                 #endregion
                 );
-                Chart.ItemsSource = chartData;
+                DoughnutChart.ItemsSource = chartData;
+                LineChart.ItemsSource = chartData;
                 await Task.Delay(3000);
             }
         }
