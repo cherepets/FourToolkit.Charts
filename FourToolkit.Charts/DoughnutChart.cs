@@ -11,27 +11,29 @@ namespace FourToolkit.Charts
     public class DoughnutChart : UserControl
     {
         public DataTemplate ItemTemplate { get; set; }
+        
+        public static readonly DependencyProperty ItemsSourceProperty =
+            DependencyProperty.Register(nameof(ItemsSource), typeof(IList), typeof(DoughnutChart), new PropertyMetadata(null, OnItemsSourceChanged));
 
         public IList ItemsSource
         {
-            get
-            {
-                return _itemsSource;
-            }
-            set
-            {
-                _itemsSource = value;
-                var observable = _itemsSource as INotifyCollectionChanged;
-                if (observable != null)
-                    observable.CollectionChanged += (s, e) => Redraw();
-                Redraw();
-            }
+            get { return (IList)GetValue(ItemsSourceProperty); }
+            set { SetValue(ItemsSourceProperty, value); }
         }
 
-        private IList _itemsSource;
+        private static void OnItemsSourceChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            var chart = d as DoughnutChart;
+            var value = e.NewValue as IList;
+            if (chart == null || value == null) return;
+            var observable = value as INotifyCollectionChanged;
+            if (observable != null)
+                observable.CollectionChanged += (s, a) => chart.Redraw();
+            chart.Redraw();
+        }
 
         public static readonly DependencyProperty ThicknessProperty =
-            DependencyProperty.Register("Thickness", typeof(double), typeof(DoughnutChart), null);
+            DependencyProperty.Register(nameof(Thickness), typeof(double), typeof(DoughnutChart), new PropertyMetadata(10d, PropertyChangedDelegate));
 
         public double Thickness
         {
@@ -45,10 +47,6 @@ namespace FourToolkit.Charts
         {
             _root = new Grid();
             Content = _root;
-
-            #region Defaults
-            Thickness = 10;
-            #endregion
         }
 
         private void Redraw()
@@ -88,5 +86,7 @@ namespace FourToolkit.Charts
                 d += arc.SweepAngle;
             }
         }
+
+        private static PropertyChangedCallback PropertyChangedDelegate = (s, a) => (s as DoughnutChart)?.Redraw();
     }
 }

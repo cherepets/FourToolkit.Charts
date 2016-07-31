@@ -1,16 +1,31 @@
 ﻿using FourToolkit.Charts.Data;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Threading.Tasks;
 using Windows.UI;
 
 namespace Demo
 {
-    public sealed partial class MainPage
+    public sealed partial class MainPage : INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public ChartData ChartData
+        {
+            get { return _chartData; }
+            set
+            {
+                _chartData = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ChartData)));
+            }
+        }
+        private ChartData _chartData;
+
         public MainPage()
         {
             InitializeComponent();
+            DataContext = this;
             Init();
         }
 
@@ -20,7 +35,7 @@ namespace Demo
             while (true)
             {
                 var i = 0;
-                var chartData = ChartData.PrepareChartData(new List<int> { rnd.Next(1, 10), rnd.Next(1, 10), rnd.Next(1, 10), rnd.Next(1, 10) }
+                ChartData = ChartData.PrepareChartData(new List<int> { rnd.Next(1, 10), rnd.Next(1, 10), rnd.Next(1, 10), rnd.Next(1, 10) }
                 #region Comment these lines to set random colors
                 , q =>
                 {
@@ -33,8 +48,6 @@ namespace Demo
                 }
                 #endregion
                 );
-                DoughnutChart.ItemsSource = chartData;
-                LineChart.ItemsSource = chartData;
                 await Task.Delay(3000);
             }
         }

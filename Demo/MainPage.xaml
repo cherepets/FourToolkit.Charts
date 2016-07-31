@@ -10,7 +10,7 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
-        <c:DoughnutChart x:Name="DoughnutChart" Margin="12" Grid.Column="0">
+        <c:DoughnutChart x:Name="DoughnutChart" Margin="12" Grid.Column="0" ItemsSource="{Binding ChartData}">
             <c:DoughnutChart.ItemTemplate>
                 <DataTemplate>
                     <c:DoughnutChartItem Value="{Binding Part}" Color="{Binding Color}"/>
@@ -18,7 +18,7 @@
             </c:DoughnutChart.ItemTemplate>
         </c:DoughnutChart>
 
-        <c:LineChart x:Name="LineChart" Margin="12" Grid.Column="1">
+        <c:LineChart x:Name="LineChart" Margin="12" Grid.Column="1" ItemsSource="{Binding ChartData}">
             <c:LineChart.ItemTemplate>
                 <DataTemplate>
                     <c:LineChartItem Key="{Binding Name}" Value="{Binding Value}"/>

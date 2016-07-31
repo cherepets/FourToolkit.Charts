@@ -1,13 +1,9 @@
 ﻿using FourToolkit.Charts.Extensions;
 using Microsoft.Graphics.Canvas.Geometry;
 using Microsoft.Graphics.Canvas.UI.Xaml;
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -19,26 +15,29 @@ namespace FourToolkit.Charts
     {
         public DataTemplate ItemTemplate { get; set; }
 
+
+        public static readonly DependencyProperty ItemsSourceProperty =
+            DependencyProperty.Register(nameof(ItemsSource), typeof(IList), typeof(LineChart), new PropertyMetadata(null, OnItemsSourceChanged));
+
         public IList ItemsSource
         {
-            get
-            {
-                return _itemsSource;
-            }
-            set
-            {
-                _itemsSource = value;
-                var observable = _itemsSource as INotifyCollectionChanged;
-                if (observable != null)
-                    observable.CollectionChanged += (s, e) => _canvas.Invalidate();
-                _canvas.Invalidate();
-            }
+            get { return (IList)GetValue(ItemsSourceProperty); }
+            set { SetValue(ItemsSourceProperty, value); }
         }
 
-        private IList _itemsSource;
+        private static void OnItemsSourceChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            var chart = d as LineChart;
+            var value = e.NewValue as IList;
+            if (chart == null || value == null) return;
+            var observable = value as INotifyCollectionChanged;
+            if (observable != null)
+                observable.CollectionChanged += (s, a) => chart.Redraw();
+            chart.Redraw();
+        }
 
         public static readonly DependencyProperty ThicknessProperty =
-            DependencyProperty.Register("Thickness", typeof(double), typeof(LineChart), new PropertyMetadata(3d, PropertyChangedDelegate));
+            DependencyProperty.Register(nameof(Thickness), typeof(double), typeof(LineChart), new PropertyMetadata(3d, PropertyChangedDelegate));
 
         public double Thickness
         {
@@ -47,7 +46,7 @@ namespace FourToolkit.Charts
         }
 
         public static readonly DependencyProperty FillProperty =
-            DependencyProperty.Register("Fill", typeof(SolidColorBrush), typeof(LineChart), new PropertyMetadata(null, PropertyChangedDelegate));
+            DependencyProperty.Register(nameof(Fill), typeof(SolidColorBrush), typeof(LineChart), new PropertyMetadata(null, PropertyChangedDelegate));
 
         public SolidColorBrush Fill
         {
@@ -176,12 +175,9 @@ namespace FourToolkit.Charts
                             ? (float)((item.Value - min) * availableHeight / diff)
                             : (float)(item.Value * availableHeight / max));
                     // Fixes for edge points
-                    if (i == 0) x += radius;
-                    if (i == items.Count - 1) x -= radius;
                     if (max - item.Value < d) y += radius;
                     if (item.Value - min < d) y -= radius;
                     // Main drawing
-                    args.DrawingSession.FillCircle(x, y, radius, fill.Color);
                     if (i == 0)
                         builder.BeginFigure(x, y);
                     else
@@ -202,9 +198,9 @@ namespace FourToolkit.Charts
         private SolidColorBrush GetBrush(string s)
             => Application.Current.Resources[s] as SolidColorBrush;
 
-        private void Refresh() => _canvas.Invalidate();
+        private void Redraw() => _canvas.Invalidate();
 
-        private static PropertyChangedCallback PropertyChangedDelegate = (s, a) => (s as LineChart)?.Refresh();
+        private static PropertyChangedCallback PropertyChangedDelegate = (s, a) => (s as LineChart)?.Redraw();
     }
 
     public enum YMode
