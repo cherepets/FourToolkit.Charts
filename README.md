@@ -8,6 +8,6 @@ Screenshot:
 Example of usage:
 [Demo](https://github.com/cherepets/FourToolkit.Charts/tree/master/Demo "Demo")
 
-[Download from NuGet Gallery](https://www.nuget.org/packages/BsCoordsSharp/ "Download from NuGet Gallery")
+[Download from NuGet Gallery](https://www.nuget.org/packages/FourToolkit.Charts/ "Download from NuGet Gallery")
 
 License: [WTFPL](http://www.wtfpl.net/txt/copying/ "WTFPL")
